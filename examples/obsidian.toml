@@ -1,0 +1,18 @@
+# Example EvoClaw MCP server registration.
+# Copy to ~/.evoclaw/mcp/obsidian.toml and edit the --vault path.
+#
+# EvoClaw spawns this on demand over stdio — no ports, no server to deploy.
+
+id      = "obsidian"
+name    = "Obsidian Knowledge Base"
+command = "evoclaw-mcp-obsidian"
+args    = ["--vault", "/absolute/path/to/YourVault"]
+
+# Optional extra args you can add to `args` above:
+#   "--exclude", "private/**"     exclude a subtree
+#   "--exclude", "templates/**"
+#   "--max-results", "8"          default result count
+#   "--cache-dir", "/custom/dir"  override the index cache location
+
+# Optional environment variables (array of [key, value] pairs):
+# env = [["EVOCLAW_OBSIDIAN_VAULT", "/absolute/path/to/YourVault"]]
